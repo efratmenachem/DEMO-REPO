@@ -1,0 +1,130 @@
+.home-container {
+    position: relative; /* פרופורציה למיקום בעמוד*/
+    margin-top: 15%;
+}
+
+/* שם אתר */
+.nameSite {
+    color: rgb(2, 96, 74, 0.70);
+    font-size: 450%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic; /* שים לב להסרת המרכאות סביב ערך זה */
+    text-shadow: 5px 5px 10px #000000; /* גם כאן, הסרת המרכאות סביב ערכי הצל */
+    font-weight: bold;
+}
+
+/* כיתוב אתר */
+.des {
+    color: rgba(217, 241, 235);
+    font-size: 170%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic; /* שים לב להסרת המרכאות סביב ערך זה */
+    text-shadow: 5px 5px 10px #000000; /* גם כאן, הסרת המרכאות סביב ערכי הצל */
+    font-weight: bold;
+}
+
+/* תמונה ראשית */
+.fixed-image {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    height:auto; 
+    z-index: -1; 
+}
+
+.space{
+    margin: 23%;
+}
+
+/* אובייקטים */
+.destination-row {
+    background: white;
+    display: flex; /* מפריד את האלמנטים לפי ציר אופקי */
+    flex-wrap: wrap; /* מאפשר גלישה לאורך השורה */
+    justify-content: center; /* מיישר את הפריטים למרכז */
+}
+
+/* אובייקט יחיד */
+.destination-container {
+    width: 22.5%; 
+    margin: 1.5%; 
+    margin-bottom: 2.5%;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* הוספת צל לפריט */
+    border-radius: 10px;
+    overflow: hidden; /* מסתיר תוכן נוסף */
+    border: 0.5px solid  rgba(1, 152, 117, 0.7)  ;
+}
+
+/* תמונה */
+.destination-image{
+    width: 100%; 
+    height: auto; 
+}
+
+/* פירטי האובייקט-חיצוני */
+.destination-details {
+    padding: 15%;
+}
+
+
+.destination-stars {
+    font-weight: bold; 
+    color: #019875; 
+    font-size:173%;
+}
+
+.destination-title{
+    color: #019875; 
+    font-size:273%;
+    margin-top: 0; /* מסיר רווח עליון ממעל לכותרת */
+}
+
+.destination-location{
+    color: #019875; 
+    font-size:133%; 
+}
+
+a:hover {
+    text-decoration: none; /* מוריד את קווי הקישור גם בעת העכבר מעליו */
+}
+
+.destination-description {
+    position: absolute; /* מעמיד את התיאור במיקום יחסי */
+    bottom: 0; 
+    left: 0; /* מיישר את התיאור לשמאל */
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 10px; /* מרווח פנימי */
+    margin: 0; /* אין מרווח חיצוני */
+    transform: translateY(100%); /* מעביר את התיאור מחוץ למסגרת */
+    transition: transform 0.3s ease; /* הוספת אנימציה חלקה */
+    padding: 17%;
+    font-size: medium;
+}
+
+.destination-container .image-container {
+    position: relative; /* מעמיד את התמונה במיקום יחסי */
+}
+
+
+.image-container:hover .destination-description {
+    transform: translateY(0); /* מראה את התיאור כאשר מעבירים את העכבר על הפריט */
+}
+
+.add-destination-button {
+    padding: 10px 20px; /* מרווח פנימי */
+    font-size: 16px; /* גודל גופן */
+    border: none; /* אין גבולות */
+    border-radius: 5px; /* רדיוס פינות */
+    background-color: #019875; /* צבע רקע */
+    color: white; /* צבע טקסט */
+    cursor: pointer; /* הפרדת הסמן */
+    transition: background-color 0.3s; /* הוספת אנימציה חלקה */
+}
+
+.add-destination-button:hover {
+    background-color: #028264; /* צבע רקע כאשר מעבירים את העכבר מעל הכפתור */
+}
